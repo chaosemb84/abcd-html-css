@@ -1,0 +1,201 @@
+body{
+  /* font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height:1.5; */
+  font: 15px/1.5 Arial,Helvetica,sans-serif;
+  padding: 0
+  margin: 0;
+  background-color: #D6EAF8;
+}
+/*Global*/
+.container{
+   width: 80%;
+   margin: auto;
+   overflow: hidden;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.button1{
+  height: 38px;
+  background: #2C3E50;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.dark{
+  padding: 15px;
+  background: #2C3E50;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*header*/
+header{
+  background: #73C6B6;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: ##229954 3px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+ header li{
+   float: left;
+   display: inline;
+   padding: 0 20px 0 20px;
+ }
+ header #branding{
+   float: left;
+ }
+ header #branding h1{
+   margin: 0;
+ }
+ header nav{
+   float: right;
+   margin-top: 10px;
+ }
+ header .highlight, header .current a{
+   color: #2C3E50;
+   font-weight: bold;
+ }
+header a:hover{
+  color: #16A085;
+  font-weight: bold;
+}
+
+/**showcase**/
+#showcase{
+  min-height: 400px;
+  background:url('../img/showcase.jpg') no-repeat 0 10px;
+  width:100%;
+  text-align: center;
+  color: #16A085;
+  background-size: 100%;
+}
+
+#showcase h1{
+  margin-top: 30px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size: 20px;
+}
+
+/**getICT**/
+#getICT{
+  padding: 15px;
+  color: #16A085;
+  background: #73C6B6;
+}
+
+#getICT h1{
+  float: left;
+}
+
+#getICT form{
+  float: right;
+  margin-top: 15px;
+}
+
+#getICT input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width:250px;
+}
+
+/**Boxes**/
+#trainings{
+  margin-top: 20px;
+}
+
+#trainings .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#trainings .box img{
+  width: 90px;
+}
+
+h2{
+  color: #16A085;
+}
+
+/**sidebar**/
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding: 5px;
+}
+/**main-col**/
+article#main_col{
+  float: left;
+  width: 65%;
+}
+/**services**/
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+}
+footer{
+  padding: 2px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #16A085;
+  text-align: center;
+}
+/**Media Queries**/
+@media(max-width:768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #getICT h1,
+    #getICT form,
+    #trainings .box,
+    article#main_col,
+    aside#sidebar
+    {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+
+    header{
+      padding-bottom: 20px;
+    }
+
+    #showcase h1{
+      margin-top: 40px;
+    }
+
+    #getICT button, .quote button{
+      display: block;
+      width: 100%;
+    }
+
+    #getICT form input(type="email"), .quote input, .quote textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
